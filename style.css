@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(1, 1, 14, 0.927);
+    color: white;
+    font-family: sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+    background-color: black;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: beige;
+}
+nav ul li a:hover {
+    color: rgb(206, 206, 16);
+}
+nav .left {
+    font-size: 2rem;
+    padding: 0;
+}
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 0;
+}
+.firstSection > div {
+    width: 30%;
+}
+.leftSection {
+    margin-left: 30px;
+    font-size: 4rem;
+}
+.firstSection {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing between text and image */
+    align-items: center; /* Vertically align the text and image */
+    margin: 150px 0;
+    gap: 20px; /* Adds spacing between the text and image */
+}
+
+.leftSection {
+    flex: 1; /* Allow the text section to take up available space */
+    margin-left: 30px;
+    font-size: 4rem;
+}
+
+.rightSection {
+    flex: 0.5; /* Reduce the width of the image container */
+    text-align: center; /* Center the image in its container */
+}
+
+.rightSection img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    max-width: 250px; /* Control the maximum size of the profile image */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Keep the image properly cropped */
+    border-radius: 50%; /* Circular profile picture */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Add depth with a subtle shadow */
+    margin: 0 auto; /* Center the image */
+    display: block;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column; /* Stack the text and image vertically on smaller screens */
+        text-align: center; /* Center the text */
+    }
+
+    .rightSection img {
+        max-width: 200px; /* Adjust the image size for smaller screens */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .leftSection {
+        font-size: 2rem; /* Adjust text size on smaller screens */
+    }
+}
+
+
+.purple {
+    color: rgb(75, 198, 30);
+}
+.secondSection {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hr {
+    margin: 40px 35px;
+    border: 0;
+    border-top: 2px solid rgba(7, 206, 76, 0.968);
+}
+.secondSection .box {
+    background-color: beige;
+    height: auto;
+    width: 80%;
+    margin: 56px auto;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}
+.academic-info p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.skills {
+    text-align: center;
+    margin: 50px 0;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    font-size: 1.2rem;
+    color: rgb(75, 198, 30);
+    margin: 10px 0;
+}
+.contact {
+    text-align: center;
+    margin: 50px 0;
+}
+.contact form {
+    display: inline-block;
+    text-align: left;
+}
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact button {
+    background-color: rgb(75, 198, 30);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: rgb(50, 150, 20);
+}
+footer {
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+footer .social-media li {
+    margin: 0 10px;
+}
+footer .social-media a {
+    color: beige;
+    text-decoration: none;
+}
+footer .social-media a:hover {
+    color: rgb(206, 206, 16);
+}
